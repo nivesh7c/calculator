@@ -1,0 +1,91 @@
+body
+{
+	font-family: 'Roboto Slab', serif;
+    background-image:  url(../img/cal.png);
+    background-size: cover;
+}
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.column
+{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 2;
+}
+.left-column
+{
+	text-align:center;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 40px;
+	margin-right: 300px;
+	margin-top: 240px;
+}
+.right-column
+{
+	width: 320px;
+	height: 400px;
+	background-color: #E9EDF8;
+	margin: 0 auto;
+	top: 125px;
+	position: relative;
+	border-radius: 5px;
+	box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+	margin-right: 104px;
+}
+#answer
+{
+	height: 120px;
+}
+#oldnumber
+{
+	text-align: center;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 25px;
+	color: #C3403F;
+}
+.maths, .num, .empty
+{
+	width: 50px;
+	height: 50px;
+	margin: 15px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0;
+	font-size: 20px;
+}
+.num, .empty
+{
+	background-color: #E9EDF8;
+}
+.num
+{
+	border: 1px solid black;
+}
+.num, .maths
+{
+	cursor: pointer;
+	background-color: #E9EDF8;
+}
+.maths:active, .num:active
+{
+	font-size: 13px;
+	background-color: black;
+	color: white;
+}
+.maths:focus, .num:focus, .empty:focus{
+	outline: 0;
+}
